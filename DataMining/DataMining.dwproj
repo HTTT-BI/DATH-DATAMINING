@@ -14,22 +14,22 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>COVID 19 DDS.dsv</Name>
-      <FullPath>COVID 19 DDS.dsv</FullPath>
+      <Name>InfectedPeople.dsv</Name>
+      <FullPath>InfectedPeople.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
-      <Name>DecisionTree.dmm</Name>
-      <FullPath>DecisionTree.dmm</FullPath>
+      <Name>DecisionTreeForInfectedAndDecreased.dmm</Name>
+      <FullPath>DecisionTreeForInfectedAndDecreased.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AssociationRule.dmm</Name>
-      <FullPath>AssociationRule.dmm</FullPath>
+      <Name>ClusteringForInfectedAndDecreased.dmm</Name>
+      <FullPath>ClusteringForInfectedAndDecreased.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Clustering.dmm</Name>
-      <FullPath>Clustering.dmm</FullPath>
+      <Name>AssociationRuleForInfectedAnđecreased.dmm</Name>
+      <FullPath>AssociationRuleForInfectedAnđecreased.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>

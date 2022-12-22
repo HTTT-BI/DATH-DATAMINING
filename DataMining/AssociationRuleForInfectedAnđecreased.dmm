@@ -1,0 +1,250 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="452c055b-7df2-44ad-adf6-a257a65105dc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>AssociationRuleForInfectedAnđecreased</ID>
+  <Name>AssociationRuleForInfectedAnđecreased</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_vInfectedPeople</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7357" scrolltop="-5292" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17754" y="14579" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vInfectedPeople" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_vInfectedPeople" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7357</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5292</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fc8cc543-479a-4870-a5c8-c5aae2d31112">
+    <DataSourceViewID>COVID 19 DDS</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e8b4c24b-17d8-460b-b286-57b4e1e63fd8">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70b7f41c-2c53-454c-8d01-f839a1909f35">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c3c6a08-2357-444b-8e37-f44519fc102f">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>age</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="bb5f7f10-6411-4429-b75f-a5d061bf113f">
+      <ID>Case Status</ID>
+      <Name>Case Status</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="031b0958-06d8-4924-bd9e-e48f8f0b0162">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9561980-2373-4dc3-a75f-adc76d14e523">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>case_x0020_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2c470269-fcd8-47e0-8a01-b9edea403394">
+      <ID>City</ID>
+      <Name>City</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="de201a96-c5bc-4dfa-8e39-2d7298b0d4e7">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88d25ef9-e16f-418a-b99f-9df8a04272c8">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>city</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3d138b5f-3b1c-4dea-8d54-6f8cb3864803">
+      <ID>Exposure</ID>
+      <Name>Exposure</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="850a01ce-548a-4971-8359-192b4983cd1f">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d8de9ac-3bde-4488-90a5-b5fb790fa2b1">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>exposure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8b5b70b5-1f39-4af6-850b-be64d8871f98">
+      <ID>Gender</ID>
+      <Name>Gender</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5c7d5272-d125-4e6b-bfdb-5a0239a1d800">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b274ed8f-8b12-46e1-99a7-edd494ac37b8">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>gender</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="25eaa0a9-c5cd-44ab-a418-42e057985c32">
+      <ID>Key</ID>
+      <Name>Key</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f58b063e-1b0f-4c95-bbdf-a89be8232f80">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="707c7128-159e-4552-9ec2-216079bcc9d3">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e5dd5cf7-ef00-4f93-bc5a-64852abb8b85">
+      <ID>Year</ID>
+      <Name>Year</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c541776e-da75-4376-9f46-833efe50fdc3">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45562c61-a61d-4363-add0-2db4d629dc81">
+            <TableID>dbo_vInfectedPeople</TableID>
+            <ColumnID>year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="bb2b8205-1dec-439c-a4e9-5a1a830f2e5d">
+      <ID>AssociationRuleForInfectedAnđecreased</ID>
+      <Name>AssociationRuleForInfectedAnđecreased</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>MINIMUM_PROBABILITY</Name>
+          <Value xsi:type="xsd:double">0.2</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column dwd:design-time-name="564edb93-abcb-4b72-8c2e-e99feb25e498">
+          <ID>Age</ID>
+          <Name>Age</Name>
+          <SourceColumnID>Age</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="75fb8eda-bc17-45a7-81e6-c20e2a54d1f3">
+          <ID>Case Status</ID>
+          <Name>Case Status</Name>
+          <SourceColumnID>Case Status</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="f0cc1cc6-5b09-45be-88f0-ef3213eb936f">
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceColumnID>City</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="35b1e26c-9608-42cd-b69a-7b6c8604a089">
+          <ID>Exposure</ID>
+          <Name>Exposure</Name>
+          <SourceColumnID>Exposure</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f0602386-b20a-46a8-b4bc-a05e8d9dfffc">
+          <ID>Gender</ID>
+          <Name>Gender</Name>
+          <SourceColumnID>Gender</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="905b26d0-0b05-42b2-be44-6a682636f061">
+          <ID>Key</ID>
+          <Name>Key</Name>
+          <SourceColumnID>Key</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="639e6a19-d217-428d-a7e2-f4ac9093a2f9">
+          <ID>Year</ID>
+          <Name>Year</Name>
+          <SourceColumnID>Year</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>5</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

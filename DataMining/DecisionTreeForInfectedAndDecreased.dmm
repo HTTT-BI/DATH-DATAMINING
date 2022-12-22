@@ -1,6 +1,6 @@
-﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="67cea76b-1432-402b-8e4f-8a8d6d978c04" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Clustering</ID>
-  <Name>Clustering</Name>
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="437580ba-82b5-40d2-975a-ec846b2f33db" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DecisionTree For Infected Or Decreased</ID>
+  <Name>DecisionTreeForInfectedAndDecreased</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -16,7 +16,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7714" scrolltop="-5292" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22172" y="14579" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7357" scrolltop="-5292" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="17754" y="14579" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-7714</Value>
+      <Value>-7357</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -72,117 +72,117 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="71d3bb38-1559-42b4-a8cc-1f834a668e1c">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6accca47-033a-48f4-964b-2c2dc4896252">
     <DataSourceViewID>COVID 19 DDS</DataSourceViewID>
   </Source>
   <Columns>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6ecb92d5-d988-4ad0-ab5a-4b9f797b8276">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a3f8dc78-e033-4311-8fec-e96d27f73f7d">
       <ID>Age</ID>
       <Name>Age</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="77b57c73-10e8-4dac-9a41-44d306c354ea">
+        <KeyColumn dwd:design-time-name="4ddbb4e6-6f5b-458f-a09c-f3cd7c4f0af1">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1af52441-92a7-4838-8b8d-69a865ddada1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="586ceaca-9779-4373-8b1e-7a370e98e6f4">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>age</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="1eeabcf9-c3b3-47e4-8f4d-4bdb4ea1ce8e">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="5f81e6bf-0c7d-422f-b640-55d0945798d5">
       <ID>Case Status</ID>
       <Name>Case Status</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c646abf3-26f4-4b52-99a7-527dab7a017b">
+        <KeyColumn dwd:design-time-name="0cec51f8-470d-45ab-b72c-342b2867bb7e">
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="14cd2d69-d296-497b-92a8-e363246835eb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7966a87-86a8-4c2b-8df4-f9b196eb4315">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>case_x0020_status</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f337bf0a-b72c-4003-96d0-92564e27ce09">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f2578122-86a3-4b2f-892e-a56dfaec1cbc">
       <ID>City</ID>
       <Name>City</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ea90869c-eb7f-49ea-8f89-f92627420623">
+        <KeyColumn dwd:design-time-name="3cc12299-7d1d-4962-ace2-a075dfb3a8d7">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c908b0b-ce9b-4a0e-8293-7e84e093461b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29f34c64-f996-41ec-afd2-5876e87071bf">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>city</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="efec6960-a950-4677-87ea-09df3fdf66e8">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="6599f0ad-22f9-431c-a948-409cf65d362c">
       <ID>Exposure</ID>
       <Name>Exposure</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f4a5545b-55b2-4d52-b0f5-afe9a88c9865">
+        <KeyColumn dwd:design-time-name="b655b52e-da97-48c4-86a8-0400b36413ad">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb13ac44-6e91-4f42-9da7-0dd697293823">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56abdcb5-7d82-4690-9224-7ae833594858">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>exposure</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="8f41a9c6-9940-42a3-93c2-0e5bda62ba3f">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="43e99925-39fa-4f45-8f99-e2166030cc4f">
       <ID>Gender</ID>
       <Name>Gender</Name>
       <Type>Text</Type>
       <Content>Discrete</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="aa68e6ba-19e4-4eca-8879-74584881e079">
+        <KeyColumn dwd:design-time-name="cd979919-0d8d-4d5c-9a1b-f63d83fbadb7">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="28982498-2d60-4c65-8859-f6858c75d344">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="feb04ce7-2b18-478f-9444-0f35eaa3914e">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>gender</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="abeda70b-a481-4c41-a056-2e1cf1e12f9c">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9a526b17-ec05-4978-b797-ee8358211a57">
       <ID>Key</ID>
       <Name>Key</Name>
       <IsKey>true</IsKey>
       <Type>Long</Type>
       <Content>Key</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5fa69d1f-1cb6-49ef-8c9a-ff139e832cff">
+        <KeyColumn dwd:design-time-name="5fadb280-eeda-4922-951a-599d4d7805cf">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b08ffb66-be0c-4134-b5ce-e24070a7db55">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f5472ca8-ea14-4ffe-9770-3a50def25b5f">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>key</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="f2d7c897-bda2-4be5-8a2b-e5821d1d91db">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3e090483-c313-4924-ad42-a9e30eb033e4">
       <ID>Year</ID>
       <Name>Year</Name>
       <Type>Long</Type>
-      <Content>Discrete</Content>
+      <Content>Discretized</Content>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="df1ec9f7-964c-4b79-9584-6ad932fd10c9">
+        <KeyColumn dwd:design-time-name="ce33794d-1af1-4838-a8ff-1b2addc14fc8">
           <DataType>Integer</DataType>
           <DataSize>-1</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c855056-bdf9-4657-befb-0d5d70e418ef">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b237211b-f993-420a-853f-56b7e9d60c30">
             <TableID>dbo_vInfectedPeople</TableID>
             <ColumnID>year</ColumnID>
           </Source>
@@ -191,54 +191,48 @@
     </Column>
   </Columns>
   <MiningModels>
-    <MiningModel dwd:design-time-name="2dd5cf3a-c6cd-4995-92d3-7de389104bb1">
-      <ID>Clustering</ID>
-      <Name>Clustering</Name>
+    <MiningModel dwd:design-time-name="0c7ba357-4c54-4137-bf22-b7fa5c94fec0">
+      <ID>DecisionTree For Infected Or Decreased</ID>
+      <Name>DecisionTree For Infected Or Decreased</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
       <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
-      <Algorithm>Microsoft_Clustering</Algorithm>
-      <AlgorithmParameters>
-        <AlgorithmParameter>
-          <Name>CLUSTER_COUNT</Name>
-          <Value xsi:type="xsd:int">5</Value>
-        </AlgorithmParameter>
-      </AlgorithmParameters>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="dc47fc6b-f899-47c8-a03a-2d0c45fb1ce2">
+        <Column dwd:design-time-name="282f465e-9206-4dcf-a4aa-8cbc5632355b">
           <ID>Age</ID>
           <Name>Age</Name>
           <SourceColumnID>Age</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="7f684f4c-f5fb-412b-9639-6eff7abb4fe2">
+        <Column dwd:design-time-name="ba55ddd6-0ed3-4aaf-ad61-843be9b7e7b0">
           <ID>Case Status</ID>
           <Name>Case Status</Name>
           <SourceColumnID>Case Status</SourceColumnID>
           <Usage>PredictOnly</Usage>
         </Column>
-        <Column dwd:design-time-name="746ad432-ae2e-4b6a-bdd1-3c26ab815292">
+        <Column dwd:design-time-name="5ec1388b-22bf-4a0a-8e06-ef04f3c157c4">
           <ID>City</ID>
           <Name>City</Name>
           <SourceColumnID>City</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="119448aa-3d37-4c12-bb6e-90dc7252d004">
+        <Column dwd:design-time-name="10d07096-3fd1-40a7-bd1c-76c5455b1024">
           <ID>Exposure</ID>
           <Name>Exposure</Name>
           <SourceColumnID>Exposure</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="29333ac5-9aa6-4c98-86ad-818286e3fb6c">
+        <Column dwd:design-time-name="ef68dfe4-f0f5-4f08-9e7e-078027168dac">
           <ID>Gender</ID>
           <Name>Gender</Name>
           <SourceColumnID>Gender</SourceColumnID>
         </Column>
-        <Column dwd:design-time-name="072ce694-b1b9-4acc-bff6-e4c55977a1c8">
+        <Column dwd:design-time-name="702459f7-8101-4a0e-a148-631a1c47dbaa">
           <ID>Key</ID>
           <Name>Key</Name>
           <SourceColumnID>Key</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="0d9c1619-66ec-4602-95a5-68f5881b3230">
+        <Column dwd:design-time-name="196a3c38-8da7-410a-9138-e743f9da4689">
           <ID>Year</ID>
           <Name>Year</Name>
           <SourceColumnID>Year</SourceColumnID>

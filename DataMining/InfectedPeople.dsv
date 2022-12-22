@@ -1,6 +1,6 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="01320ed0-ab13-48d8-a930-81ef73230d80" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cca97f11-75d8-4d46-b98f-5c1e30b13f85" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>COVID 19 DDS</ID>
-  <Name>COVID 19 DDS</Name>
+  <Name>InfectedPeople</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -14,7 +14,6 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
-      <Value></Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
@@ -28,7 +27,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3928" scrolltop="-6035" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19632" y="16007" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2887" scrolltop="-4053" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18918" y="16007" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -39,7 +38,7 @@
                 <layoutmanager>
                   <ddsxmlobj />
                 </layoutmanager>
-                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vInfectedPeople" left="4388" top="-29" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="vInfectedPeople" left="5072" top="1953" logicalid="3" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
                   </control>
@@ -54,8 +53,8 @@
 </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
-            <DiagramViewPortLeft>-3928</DiagramViewPortLeft>
-            <DiagramViewPortTop>-6035</DiagramViewPortTop>
+            <DiagramViewPortLeft>-2887</DiagramViewPortLeft>
+            <DiagramViewPortTop>-4053</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -70,40 +69,40 @@
       <xs:element name="COVID_x0020_19_x0020_DDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="75c7d9bf-4afc-4d16-811f-88685d18de2a">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_vInfectedPeople" msprop:design-time-name="d4feb3fc-370d-4272-8762-4bef5d3afb04" msprop:DbTableName="vInfectedPeople" msprop:FriendlyName="vInfectedPeople" msprop:DbSchemaName="dbo" msprop:TableType="View">
+            <xs:element name="dbo_vInfectedPeople" msprop:design-time-name="5c256d59-e4ea-41a3-bb47-269e417eb0f1" msprop:DbTableName="vInfectedPeople" msprop:FriendlyName="vInfectedPeople" msprop:DbSchemaName="dbo" msprop:TableType="View">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="key" msprop:design-time-name="50c0e8fc-c66e-45cc-8191-b5adeb7b96f4" msprop:DbColumnName="key" msprop:FriendlyName="key" type="xs:int" minOccurs="0" />
-                  <xs:element name="exposure" msdata:ReadOnly="true" msprop:design-time-name="fd666810-b893-49d9-993d-0cd076eaee77" msprop:DbColumnName="exposure" msprop:FriendlyName="exposure" minOccurs="0">
+                  <xs:element name="key" msprop:design-time-name="64d01d3c-59bd-46da-9583-d2edb1841e8a" msprop:DbColumnName="key" msprop:FriendlyName="key" type="xs:int" minOccurs="0" />
+                  <xs:element name="exposure" msdata:ReadOnly="true" msprop:design-time-name="4ef25c17-21ab-456f-93a0-c30250dd883b" msprop:DbColumnName="exposure" msprop:FriendlyName="exposure" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="100" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="gender" msdata:ReadOnly="true" msprop:design-time-name="f94bf058-80f0-4dd4-811b-80aabcca7908" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                  <xs:element name="gender" msdata:ReadOnly="true" msprop:design-time-name="f6e08bc0-8899-45af-bd54-1c2caa395b27" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="100" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="age" msdata:ReadOnly="true" msprop:design-time-name="ba0775ea-d823-4464-af3c-68a3445f679a" msprop:DbColumnName="age" msprop:FriendlyName="age">
+                  <xs:element name="age" msdata:ReadOnly="true" msprop:design-time-name="036bfb72-05ea-4407-8b57-540f513275a7" msprop:DbColumnName="age" msprop:FriendlyName="age">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="10" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="city" msprop:design-time-name="ad7bf1bc-1293-4a4f-9e00-efeba7c1890a" msprop:DbColumnName="city" msprop:FriendlyName="city" minOccurs="0">
+                  <xs:element name="city" msprop:design-time-name="e1b3db43-86ec-4f90-8f41-9b21cfbc4a97" msprop:DbColumnName="city" msprop:FriendlyName="city" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="100" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="year" msprop:design-time-name="8c6d2490-949d-4030-a1e6-6275fcbcb9b3" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
-                  <xs:element name="case_x0020_status" msdata:ReadOnly="true" msprop:design-time-name="6ea31f70-6a0a-4941-b65e-6c605c747187" msprop:DbColumnName="case status" msprop:FriendlyName="case status">
+                  <xs:element name="year" msprop:design-time-name="d8b238b1-b158-421b-b372-c39236d2f83b" msprop:DbColumnName="year" msprop:FriendlyName="year" type="xs:int" minOccurs="0" />
+                  <xs:element name="case_x0020_status" msdata:ReadOnly="true" msprop:design-time-name="67a38a63-3799-42fc-9daf-76f3e608a790" msprop:DbColumnName="case status" msprop:FriendlyName="case status">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="9" />
