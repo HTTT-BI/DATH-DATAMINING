@@ -24,10 +24,6 @@
       <FullPath>DecisionTreeForInfectedAndDecreased.dmm</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ClusteringForInfectedAndDecreased.dmm</Name>
-      <FullPath>ClusteringForInfectedAndDecreased.dmm</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>AssociationRuleForInfectedAnđecreased.dmm</Name>
       <FullPath>AssociationRuleForInfectedAnđecreased.dmm</FullPath>
     </ProjectItem>
