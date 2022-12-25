@@ -17,6 +17,10 @@
       <Name>InfectedPeople.dsv</Name>
       <FullPath>InfectedPeople.dsv</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>RelatedToOutbreakPeople.dsv</Name>
+      <FullPath>RelatedToOutbreakPeople.dsv</FullPath>
+    </ProjectItem>
   </DataSourceViews>
   <MiningModels>
     <ProjectItem>
@@ -26,6 +30,14 @@
     <ProjectItem>
       <Name>AssociationRuleForInfectedAnđecreased.dmm</Name>
       <FullPath>AssociationRuleForInfectedAnđecreased.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DecisionTreeForRelatedOutbreak.dmm</Name>
+      <FullPath>DecisionTreeForRelatedOutbreak.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AssociationRuleForRelatedOutbreak.dmm</Name>
+      <FullPath>AssociationRuleForRelatedOutbreak.dmm</FullPath>
     </ProjectItem>
   </MiningModels>
   <Configurations>
